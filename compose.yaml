@@ -10,7 +10,7 @@
 services:
   app:
     build:
-      context: .
+      context: app/.
       target: final
     # If your application exposes a port, uncomment the following lines and change
     # the port numbers as needed. The first number is the host port and the second

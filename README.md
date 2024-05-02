@@ -1,0 +1,1 @@
+Build the image and start the app in a container with `docker compose up --build`.

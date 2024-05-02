@@ -71,12 +71,12 @@ FROM node:18-alpine as base
 FROM base AS final
 
 # set working directory
-WORKDIR /app
+WORKDIR .
 
 # copy relevant folders and files from local machine to container
-COPY ./site/public ./public
-COPY ./site/src ./src
-COPY ./site/package.json ./
+COPY ./public ./public
+COPY ./src ./src
+COPY ./package.json ./
 
 # expose port for internal communication, if required
 #EXPOSE 3000
